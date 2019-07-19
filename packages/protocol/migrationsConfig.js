@@ -29,6 +29,7 @@ const defaultConfig = {
     minDeposit: 1, // 1 cGLD
     queueExpiry: 7 * 24 * 60 * 60, // 1 week
     referendumStageDuration: 15 * 60, // 15 minutes
+    tallyStageDuration: 15 * 60, // 15 minutes
   },
   gasPriceMinimum: {
     initialMinimum: 10000,
@@ -44,6 +45,11 @@ const defaultConfig = {
       numerator: 1,
       denominator: 2,
     },
+  },
+  quorum: {
+    quorumBaseline: 8 / 10,
+    quorumFloor: 5 / 100,
+    updateCoefficient: 1 / 5,
   },
   registryProxyPredeployedAddress: '0x000000000000000000000000000000000000ce10',
   reserve: {
@@ -81,6 +87,7 @@ const linkedLibraries = {
     'StableToken',
     'Validators',
     'Governance',
+    'Quorum',
   ],
   LinkedList: ['AddressLinkedList', 'SortedLinkedList'],
   SortedLinkedList: ['AddressSortedLinkedList', 'IntegerSortedLinkedList'],
