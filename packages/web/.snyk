@@ -1,0 +1,42 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:extend:20180424':
+    - tabletop > nsp > https-proxy-agent > agent-base > extend:
+        patched: '2023-03-21T22:13:07.301Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - mailgun-js > proxy-agent > https-proxy-agent:
+        patched: '2023-03-21T22:13:07.301Z'
+    - mailgun-js > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2023-03-21T22:13:07.301Z'
+  SNYK-JS-LODASH-567746:
+    - next > @babel/core > lodash:
+        patched: '2023-03-21T22:13:07.301Z'
+    - next > autodll-webpack-plugin > lodash:
+        patched: '2023-03-21T22:13:07.301Z'
+    - '@zeit/next-sass > sass-loader > async > lodash':
+        patched: '2023-03-21T22:13:07.301Z'
+    - next > @babel/preset-env > @babel/plugin-transform-block-scoping > lodash:
+        patched: '2023-03-21T22:13:07.301Z'
+    - next > autodll-webpack-plugin > webpack-merge > lodash:
+        patched: '2023-03-21T22:13:07.301Z'
+    - next > styled-jsx > babel-types > lodash:
+        patched: '2023-03-21T22:13:07.301Z'
+    - next > @babel/preset-env > @babel/plugin-transform-classes > @babel/helper-define-map > lodash:
+        patched: '2023-03-21T22:13:07.301Z'
+    - next > @babel/preset-env > @babel/plugin-transform-parameters > @babel/helper-call-delegate > @babel/traverse > lodash:
+        patched: '2023-03-21T22:13:07.301Z'
+    - next > @babel/preset-env > @babel/plugin-transform-parameters > @babel/helper-call-delegate > @babel/traverse > @babel/generator > lodash:
+        patched: '2023-03-21T22:13:07.301Z'
+    - next > @babel/preset-env > @babel/plugin-transform-parameters > @babel/helper-call-delegate > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2023-03-21T22:13:07.301Z'
+    - next > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2023-03-21T22:13:07.301Z'
+    - next > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2023-03-21T22:13:07.301Z'
+    - fast-xml-parser > lodash:
+        patched: '2023-03-21T22:13:07.301Z'
+    - mailgun-js > async > lodash:
+        patched: '2023-03-21T22:13:07.301Z'

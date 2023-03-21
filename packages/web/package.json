@@ -17,7 +17,9 @@
     "lint": "tslint -c tslint.json --project tsconfig.json",
     "kill-dev": "kill -9 $(lsof -ti :3000)",
     "test": "jest --runInBand",
-    "test-licenses": "yarn licenses list --prod | grep '\\(─ GPL\\|─ (GPL-[1-9]\\.[0-9]\\+ OR GPL-[1-9]\\.[0-9]\\+)\\)' && echo 'Found GPL license(s). Use 'yarn licenses list --prod' to look up the offending package' || echo 'No GPL licenses found'"
+    "test-licenses": "yarn licenses list --prod | grep '\\(─ GPL\\|─ (GPL-[1-9]\\.[0-9]\\+ OR GPL-[1-9]\\.[0-9]\\+)\\)' && echo 'Found GPL license(s). Use 'yarn licenses list --prod' to look up the offending package' || echo 'No GPL licenses found'",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@segment/in-eu": "^0.2.1",
@@ -32,12 +34,12 @@
     "debounce": "^1.1.0",
     "express": "^4.16.4",
     "express-enforces-ssl": "^1.1.0",
-    "fast-xml-parser": "^3.12.16",
+    "fast-xml-parser": "^4.1.2",
     "fecha": "^3.0.2",
-    "firebase": "^6.2.4",
+    "firebase": "^8.0.1",
     "glob": "^7.1.3",
     "hamburgers": "^0.9.3",
-    "helmet": "^3.16.0",
+    "helmet": "^3.21.1",
     "hex-rgba": "^1.0.2",
     "html-to-formatted-text": "^2.6.0",
     "js-cookie": "^2.2.0",
@@ -46,8 +48,8 @@
     "mailgun-js": "^0.22.0",
     "mobile-detect": "^1.4.2",
     "net": "^1.0.2",
-    "next": "^8.0.3",
-    "next-i18next": "^0.36.5",
+    "next": "^12.0.9",
+    "next-i18next": "^4.0.0",
     "next-images": "^1.1.1",
     "next-plugin-transpile-modules": "^2.0.0",
     "nuka-carousel": "git://github.com/cmcewen/nuka-carousel#fee86bf",
@@ -66,8 +68,9 @@
     "shuffle-seed": "^1.1.6",
     "stickyfilljs": "^2.0.5",
     "svgs": "^4.1.0",
-    "tabletop": "^1.5.2",
-    "tls": "^0.0.1"
+    "tabletop": "^1.6.0",
+    "tls": "^0.0.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@firebase/app-types": "^0.3.7",
@@ -97,5 +100,6 @@
   },
   "engines": {
     "node": "8.x.x"
-  }
+  },
+  "snyk": true
 }
