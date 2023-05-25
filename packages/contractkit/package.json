@@ -16,7 +16,9 @@
     "prettify": "yarn run prettier --config ../../.prettierrc.js --write '{contracts,types}/**/*.+(ts|tsx|js|jsx)'",
     "test": "export TZ=UTC && jest --ci --silent --coverage --runInBand test/attestations.test.ts test/erc20-utils.test.ts test/google-storage-utils.test.ts test/start_geth.sh test/transaction-utils.test.ts",
     "test:verbose": "export TZ=UTC && jest --ci --verbose --runInBand  test/attestations.test.ts test/erc20-utils.test.ts test/google-storage-utils.test.ts test/start_geth.sh test/transaction-utils.test.ts",
-    "test-licenses": "yarn licenses list --prod | grep '\\(─ GPL\\|─ (GPL-[1-9]\\.[0-9]\\+ OR GPL-[1-9]\\.[0-9]\\+)\\)' && echo 'Found GPL license(s). Use 'yarn licenses list --prod' to look up the offending package' || echo 'No GPL licenses found'"
+    "test-licenses": "yarn licenses list --prod | grep '\\(─ GPL\\|─ (GPL-[1-9]\\.[0-9]\\+ OR GPL-[1-9]\\.[0-9]\\+)\\)' && echo 'Found GPL license(s). Use 'yarn licenses list --prod' to look up the offending package' || echo 'No GPL licenses found'",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "bin": {
     "build-sdk": "./bin/build-sdk.js"
@@ -25,26 +27,27 @@
     "@celo/utils": "0.0.1",
     "@types/jest": "^24.0.13",
     "babel-jest": "^24.8.0",
-    "@0x/subproviders": "^4.1.0",
-    "@google-cloud/storage": "^2.3.3",
+    "@0x/subproviders": "^6.0.0",
+    "@google-cloud/storage": "^5.17.0",
     "bignumber.js": "^7.2.0",
     "chalk": "^2.4.2",
-    "cross-fetch": "^3.0.2",
-    "jest": "^24.8.0",
-    "ts-jest": "^24.0.0",
-    "web3": "1.0.0-beta.37",
-    "web3-utils": "1.0.0-beta.37",
+    "cross-fetch": "^3.1.5",
+    "jest": "^25.0.0",
+    "ts-jest": "^25.3.0",
+    "web3": "1.7.5",
+    "web3-utils": "1.6.0",
     "eth-lib": "^0.2.8",
-    "lodash": "^4.17.14",
+    "lodash": "^4.17.21",
     "prettier": "1.13.5",
     "sleep-promise": "^8.0.1",
     "typechain": "git+https://github.com/celo-org/TypeChain.git#ce6a33b",
-    "typescript": "^3.3.3"
+    "typescript": "^3.3.3",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "bip32": "^1.0.2",
     "bip39": "^2.5.0",
-    "@google-cloud/storage": "^2.3.3",
+    "@google-cloud/storage": "^5.17.0",
     "@types/bignumber.js": "^5.0.0",
     "@types/bip32": "^1.0.1",
     "@types/bip39": "^2.4.2",
@@ -56,11 +59,12 @@
     "typechain": "git+https://github.com/celo-org/TypeChain.git#ce6a33b",
     "typescript": "^3.3.3",
     "babel-jest": "^24.8.0",
-    "jest": "^24.8.0",
-    "ts-jest": "^24.0.0"
+    "jest": "^25.0.0",
+    "ts-jest": "^25.3.0"
   },
   "files": [
     "index.ts",
     "lib/**/*"
-  ]
+  ],
+  "snyk": true
 }
