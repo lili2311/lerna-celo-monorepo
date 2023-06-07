@@ -32,7 +32,7 @@
     "debounce": "^1.1.0",
     "express": "^4.16.4",
     "express-enforces-ssl": "^1.1.0",
-    "fast-xml-parser": "^3.12.16",
+    "fast-xml-parser": "^4.2.4",
     "fecha": "^3.0.2",
     "firebase": "^6.2.4",
     "glob": "^7.1.3",
