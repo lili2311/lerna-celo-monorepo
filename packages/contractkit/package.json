@@ -24,14 +24,14 @@
   "dependencies": {
     "@celo/utils": "0.0.1",
     "@types/jest": "^24.0.13",
-    "babel-jest": "^24.8.0",
-    "@0x/subproviders": "^4.1.0",
-    "@google-cloud/storage": "^2.3.3",
+    "babel-jest": "^27.0.0",
+    "@0x/subproviders": "^6.0.8",
+    "@google-cloud/storage": "^3.0.0",
     "bignumber.js": "^7.2.0",
     "chalk": "^2.4.2",
     "cross-fetch": "^3.0.2",
-    "jest": "^24.8.0",
-    "ts-jest": "^24.0.0",
+    "jest": "^27.0.0",
+    "ts-jest": "^26.0.0",
     "web3": "1.0.0-beta.37",
     "web3-utils": "1.0.0-beta.37",
     "eth-lib": "^0.2.8",
@@ -44,7 +44,7 @@
   "devDependencies": {
     "bip32": "^1.0.2",
     "bip39": "^2.5.0",
-    "@google-cloud/storage": "^2.3.3",
+    "@google-cloud/storage": "^3.0.0",
     "@types/bignumber.js": "^5.0.0",
     "@types/bip32": "^1.0.1",
     "@types/bip39": "^2.4.2",
@@ -55,9 +55,9 @@
     "prettier": "1.13.5",
     "typechain": "git+https://github.com/celo-org/TypeChain.git#ce6a33b",
     "typescript": "^3.3.3",
-    "babel-jest": "^24.8.0",
-    "jest": "^24.8.0",
-    "ts-jest": "^24.0.0"
+    "babel-jest": "^27.0.0",
+    "jest": "^27.0.0",
+    "ts-jest": "^26.0.0"
   },
   "files": [
     "index.ts",
