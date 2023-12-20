@@ -6,10 +6,10 @@
   "author": "Celo",
   "license": "Apache-2.0",
   "dependencies": {
-    "@celo/contractkit": "0.0.1",
-    "@google-cloud/monitoring": "0.7.1",
+    "@celo/contractkit": "5.1.0",
+    "@google-cloud/monitoring": "2.0.0",
     "@google-cloud/pubsub": "^0.28.1",
-    "@google-cloud/storage": "^2.4.3",
+    "@google-cloud/storage": "^5.17.0",
     "@types/bip32": "^1.0.1",
     "@types/bip39": "^2.4.2",
     "bip32": "^1.0.2",
