@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@celo/utils": "0.0.1",
-    "lodash": "^4.17.14",
+    "lodash": "^4.17.17",
     "react-native-platform-touchable": "^1.1.1",
     "svgs": "^3.2.1"
   },
