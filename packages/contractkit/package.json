@@ -25,7 +25,7 @@
     "@celo/utils": "0.0.1",
     "@types/jest": "^24.0.13",
     "babel-jest": "^24.8.0",
-    "@0x/subproviders": "^4.1.0",
+    "@0x/subproviders": "^6.0.0",
     "@google-cloud/storage": "^2.3.3",
     "bignumber.js": "^7.2.0",
     "chalk": "^2.4.2",
