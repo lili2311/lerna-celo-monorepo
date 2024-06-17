@@ -30,8 +30,8 @@
     "firebase-functions": "^2.2.2",
     "rlp": "^2.2.3",
     "twilio": "^3.23.2",
-    "web3": "1.0.0-beta.37",
-    "web3-core-helpers": "1.0.0-beta.37"
+    "web3": "4.0.1",
+    "web3-core-helpers": "1.6.0"
   },
   "devDependencies": {
     "@types/debug": "^4.1.4",
