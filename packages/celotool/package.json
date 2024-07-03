@@ -9,7 +9,7 @@
     "@celo/contractkit": "0.0.1",
     "@google-cloud/monitoring": "0.7.1",
     "@google-cloud/pubsub": "^0.28.1",
-    "@google-cloud/storage": "^2.4.3",
+    "@google-cloud/storage": "^3.0.0",
     "@types/bip32": "^1.0.1",
     "@types/bip39": "^2.4.2",
     "bip32": "^1.0.2",
