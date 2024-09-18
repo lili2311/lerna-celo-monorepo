@@ -6,9 +6,9 @@
   "author": "Celo",
   "license": "Apache-2.0",
   "dependencies": {
-    "@celo/contractkit": "0.0.1",
-    "@google-cloud/monitoring": "0.7.1",
-    "@google-cloud/pubsub": "^0.28.1",
+    "@celo/contractkit": "5.1.0",
+    "@google-cloud/monitoring": "4.0.0",
+    "@google-cloud/pubsub": "^2.7.0",
     "@google-cloud/storage": "^2.4.3",
     "@types/bip32": "^1.0.1",
     "@types/bip39": "^2.4.2",
