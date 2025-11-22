@@ -54,7 +54,7 @@
     "node-fetch": "^2.3.0",
     "openzeppelin-solidity": "^2.2.0",
     "prompts": "^2.0.1",
-    "solhint": "^2.0.0",
+    "solhint": "^3.4.0",
     "solidity-bytes-utils": "^0.0.7",
     "solidity-coverage": "rotcivegaf/solidity-coverage#5875f5b7",
     "truffle": "5.0.19",
