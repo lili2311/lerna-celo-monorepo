@@ -29,7 +29,9 @@
     "posttest": "tslint -p . -t stylish",
     "prepack": "tsc -b && oclif-dev manifest && oclif-dev readme",
     "test": "export TZ=UTC && jest --ci --silent",
-    "version": "oclif-dev readme && git add README.md"
+    "version": "oclif-dev readme && git add README.md",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@celo/contractkit": "^0.0.1",
@@ -49,7 +51,8 @@
     "fs-extra": "^8.1.0",
     "path": "^0.12.7",
     "tslib": "^1",
-    "web3": "1.0.0-beta.37"
+    "web3": "1.0.0-beta.37",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1",
@@ -104,5 +107,6 @@
       "@oclif/plugin-help"
     ],
     "repositoryPrefix": "https://github.com/celo-org/celo-monorepo/tree/master/packages/cli/<%- commandPath %>"
-  }
+  },
+  "snyk": true
 }
