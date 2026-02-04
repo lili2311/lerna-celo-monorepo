@@ -34,7 +34,9 @@
     "weekly-faucet": "./scripts/bash/weekly_faucet.sh",
     "set-exchange-rate": "./scripts/bash/set_exchange_rate.sh",
     "network-check": "./scripts/bash/network_check.sh",
-    "test-licenses": "yarn licenses list --prod | grep '\\(─ GPL\\|─ (GPL-[1-9]\\.[0-9]\\+ OR GPL-[1-9]\\.[0-9]\\+)\\)' && echo 'Found GPL license(s). Use 'yarn licenses list --prod' to look up the offending package' || echo 'No GPL licenses found'"
+    "test-licenses": "yarn licenses list --prod | grep '\\(─ GPL\\|─ (GPL-[1-9]\\.[0-9]\\+ OR GPL-[1-9]\\.[0-9]\\+)\\)' && echo 'Found GPL license(s). Use 'yarn licenses list --prod' to look up the offending package' || echo 'No GPL licenses found'",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "apollo-client": "^2.4.13",
@@ -64,7 +66,8 @@
     "twilio": "^3.23.2",
     "typechain": "git+https://github.com/celo-org/TypeChain.git#ce6a33b",
     "weak-map": "^1.0.5",
-    "web3": "1.0.0-beta.37"
+    "web3": "1.0.0-beta.37",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@celo/ganache-cli": "git+https://github.com/celo-org/ganache-cli.git#2ebdf9f",
@@ -84,5 +87,6 @@
     "truffle-typings": "^1.0.6",
     "ts-node": "^7.0.1",
     "typescript": "^3.3.3"
-  }
+  },
+  "snyk": true
 }
