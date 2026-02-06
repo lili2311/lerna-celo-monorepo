@@ -32,10 +32,11 @@
     "test:detox": "CELO_TEST_CONFIG=e2e detox test -c android.emu.debug -a e2e/tmp/ --take-screenshots=failing --record-logs=failing --detectOpenHandles",
     "test:unlock": "./scripts/unlock.sh",
     "pre-deploy": "./scripts/pre-deploy.sh",
-    "prepare": "patch-package",
+    "prepare": "npm run snyk-protect && patch-package",
     "postinstall": "sh scripts/fix_rn_version.sh; patch-package",
     "update-disclaimer": "yarn licenses generate-disclaimer > LicenseDisclaimer.txt && mkdir -p android/app/src/main/assets/custom && cp LicenseDisclaimer.txt android/app/src/main/assets/custom/LicenseDisclaimer.txt",
-    "test-licenses": "yarn licenses list --prod | grep '\\(─ GPL\\|─ (GPL-[1-9]\\.[0-9]\\+ OR GPL-[1-9]\\.[0-9]\\+)\\)' && echo 'Found GPL license(s). Use 'yarn licenses list --prod' to look up the offending package' || echo 'No GPL licenses found'"
+    "test-licenses": "yarn licenses list --prod | grep '\\(─ GPL\\|─ (GPL-[1-9]\\.[0-9]\\+ OR GPL-[1-9]\\.[0-9]\\+)\\)' && echo 'Found GPL license(s). Use 'yarn licenses list --prod' to look up the offending package' || echo 'No GPL licenses found'",
+    "snyk-protect": "snyk-protect"
   },
   "rnpm": {
     "assets": [
@@ -129,7 +130,8 @@
     "tslib": "^1.9.1",
     "utf8": "^3.0.0",
     "vm-browserify": "^1.0.1",
-    "web3": "1.0.0-beta.37"
+    "web3": "1.0.0-beta.37",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
@@ -199,5 +201,6 @@
         "name": "Nexus_5X_API_28"
       }
     }
-  }
+  },
+  "snyk": true
 }
