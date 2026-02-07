@@ -1,0 +1,78 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:extend:20180424':
+    - truffle-security > truffle-compile-vyper > truffle-compile > truffle-config > truffle-provider > truffle-interface-adapter > web3 > web3-bzz > swarm-js > eth-lib > servify > request > extend:
+        patched: '2026-02-07T04:15:34.393Z'
+        id: 'npm:extend:20180424'
+        path: >-
+          truffle-security > truffle-compile-vyper > truffle-compile >
+          truffle-config > truffle-provider > truffle-interface-adapter > web3 >
+          web3-bzz > swarm-js > eth-lib > servify > request > extend
+  SNYK-JS-LODASH-567746:
+    - twilio > lodash:
+        patched: '2026-02-07T04:15:34.393Z'
+        id: SNYK-JS-LODASH-567746
+        path: twilio > lodash
+    - truffle-security > remix-lib > async > lodash:
+        patched: '2026-02-07T04:15:34.393Z'
+        id: SNYK-JS-LODASH-567746
+        path: truffle-security > remix-lib > async > lodash
+    - truffle-security > truffle-compile-vyper > async > lodash:
+        patched: '2026-02-07T04:15:34.393Z'
+        id: SNYK-JS-LODASH-567746
+        path: truffle-security > truffle-compile-vyper > async > lodash
+    - j6 > lodash:
+        patched: '2026-02-07T04:15:34.393Z'
+        id: SNYK-JS-LODASH-567746
+        path: j6 > lodash
+    - solhint > lodash:
+        patched: '2026-02-07T04:15:34.393Z'
+        id: SNYK-JS-LODASH-567746
+        path: solhint > lodash
+    - truffle-security > inquirer > lodash:
+        patched: '2026-02-07T04:15:34.393Z'
+        id: SNYK-JS-LODASH-567746
+        path: truffle-security > inquirer > lodash
+    - truffle-security > truffle-artifactor > lodash:
+        patched: '2026-02-07T04:15:34.393Z'
+        id: SNYK-JS-LODASH-567746
+        path: truffle-security > truffle-artifactor > lodash
+    - truffle-security > truffle-compile-vyper > truffle-compile > truffle-config > lodash:
+        patched: '2026-02-07T04:15:34.393Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          truffle-security > truffle-compile-vyper > truffle-compile >
+          truffle-config > lodash
+    - truffle-security > remix-lib > ethereumjs-vm > ethereumjs-blockchain > async > lodash:
+        patched: '2026-02-07T04:15:34.393Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          truffle-security > remix-lib > ethereumjs-vm > ethereumjs-blockchain >
+          async > lodash
+    - truffle-security > truffle-compile-vyper > truffle-compile > request-promise > request-promise-core > lodash:
+        patched: '2026-02-07T04:15:34.393Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          truffle-security > truffle-compile-vyper > truffle-compile >
+          request-promise > request-promise-core > lodash
+  'npm:stringstream:20180511':
+    - truffle-security > truffle-compile-vyper > truffle-compile > truffle-config > truffle-provider > truffle-interface-adapter > web3 > web3-bzz > swarm-js > eth-lib > servify > request > stringstream:
+        patched: '2026-02-07T04:15:34.393Z'
+        id: 'npm:stringstream:20180511'
+        path: >-
+          truffle-security > truffle-compile-vyper > truffle-compile >
+          truffle-config > truffle-provider > truffle-interface-adapter > web3 >
+          web3-bzz > swarm-js > eth-lib > servify > request > stringstream
+  SNYK-JS-TREEKILL-536781:
+    - solidity-coverage > tree-kill:
+        patched: '2026-02-07T04:15:34.393Z'
+        id: SNYK-JS-TREEKILL-536781
+        path: solidity-coverage > tree-kill
+  'npm:tunnel-agent:20170305':
+    - truffle-security > armlet > omni-fetch > caw > tunnel-agent:
+        patched: '2026-02-07T04:15:34.393Z'
+        id: 'npm:tunnel-agent:20170305'
+        path: truffle-security > armlet > omni-fetch > caw > tunnel-agent
