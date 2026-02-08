@@ -1,0 +1,68 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - mailgun-js > proxy-agent > https-proxy-agent:
+        patched: '2026-02-08T15:24:18.132Z'
+        id: SNYK-JS-HTTPSPROXYAGENT-469131
+        path: mailgun-js > proxy-agent > https-proxy-agent
+    - mailgun-js > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2026-02-08T15:24:18.132Z'
+        id: SNYK-JS-HTTPSPROXYAGENT-469131
+        path: mailgun-js > proxy-agent > pac-proxy-agent > https-proxy-agent
+  SNYK-JS-LODASH-567746:
+    - next > @babel/core > lodash:
+        patched: '2026-02-08T15:24:18.132Z'
+        id: SNYK-JS-LODASH-567746
+        path: next > @babel/core > lodash
+    - next > autodll-webpack-plugin > lodash:
+        patched: '2026-02-08T15:24:18.132Z'
+        id: SNYK-JS-LODASH-567746
+        path: next > autodll-webpack-plugin > lodash
+    - '@zeit/next-sass > sass-loader > async > lodash':
+        patched: '2026-02-08T15:24:18.132Z'
+        id: SNYK-JS-LODASH-567746
+        path: '@zeit/next-sass > sass-loader > async > lodash'
+    - next > @babel/preset-env > @babel/plugin-transform-block-scoping > lodash:
+        patched: '2026-02-08T15:24:18.132Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          next > @babel/preset-env > @babel/plugin-transform-block-scoping >
+          lodash
+    - next > autodll-webpack-plugin > webpack-merge > lodash:
+        patched: '2026-02-08T15:24:18.132Z'
+        id: SNYK-JS-LODASH-567746
+        path: next > autodll-webpack-plugin > webpack-merge > lodash
+    - next > styled-jsx > babel-types > lodash:
+        patched: '2026-02-08T15:24:18.132Z'
+        id: SNYK-JS-LODASH-567746
+        path: next > styled-jsx > babel-types > lodash
+    - next > @babel/preset-env > @babel/plugin-transform-classes > @babel/helper-define-map > lodash:
+        patched: '2026-02-08T15:24:18.132Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          next > @babel/preset-env > @babel/plugin-transform-classes >
+          @babel/helper-define-map > lodash
+    - fast-xml-parser > lodash:
+        patched: '2026-02-08T15:24:18.132Z'
+        id: SNYK-JS-LODASH-567746
+        path: fast-xml-parser > lodash
+    - mailgun-js > async > lodash:
+        patched: '2026-02-08T15:24:18.132Z'
+        id: SNYK-JS-LODASH-567746
+        path: mailgun-js > async > lodash
+    - next > @babel/preset-env > @babel/plugin-transform-classes > @babel/helper-replace-supers > @babel/traverse > lodash:
+        patched: '2026-02-08T15:24:18.132Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          next > @babel/preset-env > @babel/plugin-transform-classes >
+          @babel/helper-replace-supers > @babel/traverse > lodash
+    - next > @babel/preset-env > @babel/plugin-transform-classes > @babel/helper-replace-supers > @babel/traverse > @babel/generator > lodash:
+        patched: '2026-02-08T15:24:18.132Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          next > @babel/preset-env > @babel/plugin-transform-classes >
+          @babel/helper-replace-supers > @babel/traverse > @babel/generator >
+          lodash
