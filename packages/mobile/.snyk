@@ -1,0 +1,52 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - react-native-version-check > babel-preset-react-native > babel-plugin-react-transform > lodash:
+        patched: '2026-02-11T14:32:54.768Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          react-native-version-check > babel-preset-react-native >
+          babel-plugin-react-transform > lodash
+    - react-native-version-check > babel-preset-react-native > babel-plugin-transform-es2015-block-scoping > lodash:
+        patched: '2026-02-11T14:32:54.768Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          react-native-version-check > babel-preset-react-native >
+          babel-plugin-transform-es2015-block-scoping > lodash
+    - react-native-version-check > babel-preset-react-native > react-transform-hmr > react-proxy > lodash:
+        patched: '2026-02-11T14:32:54.768Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          react-native-version-check > babel-preset-react-native >
+          react-transform-hmr > react-proxy > lodash
+    - react-native-version-check > babel-preset-react-native > babel-plugin-transform-es2015-classes > babel-helper-define-map > lodash:
+        patched: '2026-02-11T14:32:54.768Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          react-native-version-check > babel-preset-react-native >
+          babel-plugin-transform-es2015-classes > babel-helper-define-map >
+          lodash
+    - react-native-version-check > babel-preset-react-native > babel-plugin-transform-class-properties > babel-helper-function-name > babel-template > lodash:
+        patched: '2026-02-11T14:32:54.768Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          react-native-version-check > babel-preset-react-native >
+          babel-plugin-transform-class-properties > babel-helper-function-name >
+          babel-template > lodash
+    - react-native-version-check > babel-preset-react-native > babel-plugin-transform-class-properties > babel-helper-function-name > babel-helper-get-function-arity > babel-types > lodash:
+        patched: '2026-02-11T14:32:54.768Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          react-native-version-check > babel-preset-react-native >
+          babel-plugin-transform-class-properties > babel-helper-function-name >
+          babel-helper-get-function-arity > babel-types > lodash
+    - react-native-version-check > babel-preset-react-native > babel-plugin-transform-class-properties > babel-helper-function-name > babel-template > babel-traverse > lodash:
+        patched: '2026-02-11T14:32:54.768Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          react-native-version-check > babel-preset-react-native >
+          babel-plugin-transform-class-properties > babel-helper-function-name >
+          babel-template > babel-traverse > lodash
