@@ -51,7 +51,7 @@
     "next-images": "^1.1.1",
     "next-plugin-transpile-modules": "^2.0.0",
     "nuka-carousel": "git://github.com/cmcewen/nuka-carousel#fee86bf",
-    "react": "^16.8.5",
+    "react": "^19.2.4",
     "react-debounce-input": "^3.2.0",
     "react-dom": "^16.8.5",
     "react-google-recaptcha": "^1.1.0",
